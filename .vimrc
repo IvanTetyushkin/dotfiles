@@ -20,25 +20,20 @@ if (&t_Co > 2 || has("gui_running")) && !exists("syntax_on")
 endif
 
 " Softtabs, 2 spaces
-set tabstop=2
-set shiftwidth=2
+set tabstop=4
+set shiftwidth=4
 set expandtab
 
 " Switch wrap off for everything
 set nowrap
 
-set laststatus=2
 set shiftround
 set textwidth=80
 set number
 set numberwidth=5
 set smartindent    
 set cursorline
-colorscheme koehler
-syntax enable
 set showmatch
-set incsearch           " search as characters are entered
-set hlsearch            " highlight matchesa
 nnoremap <leader><space> :nohlsearch<CR
 
 if has("syntax")
