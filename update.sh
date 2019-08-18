@@ -14,11 +14,5 @@ for index in ${!syncFiles[*]}
 do
 	echo "work with ${syncFiles[$index]}"
 	cp -u dotfiles/${syncFiles[$index]} ${syncFiles[$index]}
-  hash d2u &> /dev/null
-  if [ $? -eq 1 ]; then
-    echo ""
-  else
-    d2u ${syncFiles[$index]} 
-  fi
 done
 
