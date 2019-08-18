@@ -7,6 +7,7 @@ declare -a syncFiles=(
 .bashrc
 .vimrc
 .screenrc
+.gitconfig
 )
 
 for index in ${!syncFiles[*]}

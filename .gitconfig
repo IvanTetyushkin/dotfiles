@@ -1,0 +1,4 @@
+#including all files
+[include]
+  path =  .git_local
+  path =  dotfiles/.git_aliases

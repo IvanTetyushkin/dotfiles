@@ -1,22 +1,12 @@
 #
 # ~/.bashrc.aliases
 #
-
-alias pacrepo='sudo reflector -l 20 -f 10 --save /etc/pacman.d/mirrorlist'
-alias pacman='sudo pacman'
-alias journalctl='sudo journalctl'
-alias pacu='sudo pacman -Syu --noconfirm'
-alias systemctl='sudo systemctl'
-alias se='ls /usr/bin | grep'
-
-
-export QT_STYLE_OVERRIDE=gtk
-export QT_SELECT=qt5
-
 if [[ $LANG = '' ]]; then
 	export LANG=en_US.UTF-8
 fi
 
+# cd commands
+alias dc="cd"
 alias ..="cd .."
 alias ...="cd ../.."
 alias ....="cd ../../.."
@@ -46,24 +36,15 @@ alias lt="ls -toG"
 
 # less command proper show
 alias less="less -R"
+
 # timing
 alias week='date +%V'
-
-# cd 
-alias dc="cd"
-
-# Allow aliases to be with sudo
-alias sudo="sudo "
-
-# PowerOff and Resstart
-alias Poff="shutdown -P 0"
-alias Rstart="shutdown -r 0"
 
 # Exit command
 alias out="exit"
 
 #git aliases
-
 alias gst="git status"
 alias gdiff="git diff"
 alias gadd="git add"
+alias go="git checkout"
