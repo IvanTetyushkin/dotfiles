@@ -13,22 +13,25 @@ export HISTFILESIZE=10000
 export HISTSIZE=10000
 
 # Don't clear the screen after quitting a manual page
-export MANPAGER="less -X"
+#export MANPAGER="less -X"
 
 # Make new shells get the history lines from all previous
 # shells instead of the default "last window closed" history
 export PROMPT_COMMAND="history -a; $PROMPT_COMMAND"
 
 # Autocorrect typos in path names when using `cd`
-shopt -s cdspell
+#shopt -s cdspell
 
 # Check the window size after each command and, if necessary, update the values
 # of LINES and COLUMNS.
-shopt -s checkwinsize
+#shopt -s checkwinsize
 
 # Append to the Bash history file, rather than overwriting it
 shopt -s histappend
 
 # Case-insensitive globbing (used in pathname expansion)
-shopt -s nocaseglob
+#shopt -s nocaseglob
+
+# Change screen folder
+export SCREENDIR="/home/$USERNAME/.screens"
 

@@ -34,6 +34,9 @@ alias ls="command ls ${colorflag}"
 # Order by last modified, long form no user group, color
 alias lt="ls -toG"
 
+# ls to use as vim $(ls| grep)
+alias lsg="ls --color=none"
+
 # less command proper show
 alias less="less -R"
 
