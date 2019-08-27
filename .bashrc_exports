@@ -33,5 +33,8 @@ shopt -s histappend
 #shopt -s nocaseglob
 
 # Change screen folder
-export SCREENDIR="/home/$USERNAME/.screens"
+export SCREENDIR="/home/$USER/.screens"
+
+# Change tmux folder
+export TMUX_TMPDIR="/home/$USER/.tmuxsessions"
 

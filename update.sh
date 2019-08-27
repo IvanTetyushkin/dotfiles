@@ -6,8 +6,10 @@ cd
 declare -a syncFiles=(
 .bashrc
 .vimrc
-.screenrc
 .gitconfig
+.screenrc
+.tmux.conf
+bin/tmux-session  # from https://github.com/mislav/dotfiles
 )
 
 for index in ${!syncFiles[*]}

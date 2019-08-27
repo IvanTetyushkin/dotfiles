@@ -51,3 +51,8 @@ alias gst="git status"
 alias gdiff="git diff"
 alias gadd="git add"
 alias go="git checkout"
+
+# tmux aliases
+alias tmuxn="tmux new -s" # after need name
+alias tmuxlist="tmux list-sessions"
+alias tmuxattach=" tmux attach-session -t"

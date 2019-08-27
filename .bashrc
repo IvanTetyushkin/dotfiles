@@ -12,13 +12,12 @@
 # changing PATH
 # Directories to be prepended to PATH
 declare -a dirs_to_prepend=(
-    "/usr/local/bin" # Ensure that this bin always takes precedence over `/usr/bin`
+    "$HOME/bin" # Ensure that this bin always takes precedence over `/usr/bin`
 )
 
 # Directories to be appended to PATH
 declare -a dirs_to_append=(
-    "/usr/bin"
-    "$HOME/bin"
+#    "/usr/bin"
 )
 
 # Prepend directories to PATH
