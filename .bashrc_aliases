@@ -56,3 +56,9 @@ alias go="git checkout"
 alias tmuxn="tmux new -s" # after need name
 alias tmuxlist="tmux list-sessions"
 alias tmuxattach=" tmux attach-session -t"
+
+# python aliases
+alias pip="sudo pip"
+
+# module aliases python
+alias pycheck="python -m pylint --reports=y "
