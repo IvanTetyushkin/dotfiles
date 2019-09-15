@@ -13,6 +13,8 @@ set history=50		" keep 50 lines of command line history
 set ruler		" show the cursor position all the time
 set showcmd		" display incomplete commands
 set incsearch		" do incremental searching
+set number
+set relativenumber
 
 if (&t_Co > 2 || has("gui_running")) && !exists("syntax_on")
   syntax on
@@ -76,4 +78,13 @@ endif
 
 if filereadable(".vimrc.local")
   source .vimrc.local
+endif
+if &term =~ '256color'
+        " Disable Background Color Erase (BCE) so that color schemes
+        " work properly when Vim is used inside tmux and GNU screen.
+        set t_ut=
+endif
+set noerrorbells visualbell t_vb=
+if has('autocmd')
+      autocmd GUIEnter * set visualbell t_vb=
 endif
