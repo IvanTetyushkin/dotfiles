@@ -6,7 +6,6 @@ cd
 declare -a syncFiles=(
 .bashrc
 .vimrc
-.gitconfig
 .screenrc
 .tmux.conf
 bin/tmux-session  # from https://github.com/mislav/dotfiles
