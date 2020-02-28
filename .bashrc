@@ -4,11 +4,11 @@
 # If not running interactively, don't do anything
 [[ $- != *i* ]] && return
 
-#if [[ $COLORTERM = gnome-* && $TERM = xterm ]] && infocmp gnome-256color >/dev/null 2>&1; then
-#	export TERM='gnome-256color';
-#elif infocmp xterm-256color >/dev/null 2>&1; then
+if [[ $COLORTERM = gnome-* && $TERM = xterm ]] && infocmp gnome-256color >/dev/null 2>&1; then
+	export TERM='gnome-256color';
+elif infocmp xterm-256color >/dev/null 2>&1; then
 	export TERM='xterm-256color';
-#fi;
+fi;
 # changing PATH
 # Directories to be prepended to PATH
 declare -a dirs_to_prepend=(
