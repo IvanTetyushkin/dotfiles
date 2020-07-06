@@ -1,0 +1,15 @@
+[include]
+    path = ~/.gitconfig.local
+[hub]
+    protocol = https
+[alias]
+    co = checkout
+    #wtf     = !$ZSH/bin/git-wtf
+[color]
+    diff = auto
+    status = auto
+    branch = auto
+    ui = true
+[core]
+    excludesfile = ~/.gitignore
+    editor = vim

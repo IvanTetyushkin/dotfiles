@@ -1,5 +1,5 @@
 #
-# ~/.bashrc
+# ~/.bashrc main include
 #
 # If not running interactively, don't do anything
 [[ $- != *i* ]] && return
@@ -9,10 +9,11 @@ if [[ $COLORTERM = gnome-* && $TERM = xterm ]] && infocmp gnome-256color >/dev/n
 elif infocmp xterm-256color >/dev/null 2>&1; then
 	export TERM='xterm-256color';
 fi;
+
 # changing PATH
 # Directories to be prepended to PATH
 declare -a dirs_to_prepend=(
-    "$HOME/bin" # Ensure that this bin always takes precedence over `/usr/bin`
+#    "$HOME/bin" # Ensure that this bin always takes precedence over `/usr/bin`
 )
 
 # Directories to be appended to PATH
@@ -44,11 +45,11 @@ export PATH
 #adding files
 load_dotfiles() {
     declare -a files=(
-    ~/dotfiles/.bashrc_aliases # add common aliases
-    ~/dotfiles/.bashrc_appearence # appearence settings
+    ~/dotfiles/aliases.bash # add common aliases
+    ~/dotfiles/appearence.bash # appearence settings
     ~/.bashrc_local # local settings
-    ~/dotfiles/.bashrc_functions  # functions
-    ~/dotfiles/.bashrc_exports    # exports & defaults
+    ~/dotfiles/functions.bash  # functions
+    ~/dotfiles/exports.bash    # exports & defaults
     )
 
     # if these files are readable, source them

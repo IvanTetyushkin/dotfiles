@@ -15,9 +15,9 @@ shopt -s cdspell
 shopt -s nocaseglob
 
 # Change screen folder
-export SCREENDIR="/home/$USER/.screens"
+export SCREENDIR="/home/$USER/local/.screens"
 
 # Change tmux folder
-export TMUX_TMPDIR="/home/$USER/.tmuxsessions"
+export TMUX_TMPDIR="/home/$USER/.local/.tmuxsessions"
 
 export LOGBOOK="/home/$USER/Saved_commands.bash"
