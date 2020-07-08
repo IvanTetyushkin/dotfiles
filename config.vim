@@ -16,6 +16,20 @@ set incsearch		" do incremental searching
 set number
 set relativenumber
 
+if empty(glob('~/.vim/autoload/plug.vim'))
+  silent !curl -fLo ~/.vim/autoload/plug.vim --create-dirs
+    \ https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+  autocmd VimEnter * PlugInstall --sync | source $MYVIMRC
+endif
+
+
+call plug#begin('~/.vim/plugged')
+
+Plug 'https://github.com/rafi/awesome-vim-colorschemes.git'
+Plug 'https://github.com/ycm-core/YouCompleteMe.git'
+" Initialize plugin system
+call plug#end()
+
 if (&t_Co > 2 || has("gui_running")) && !exists("syntax_on")
   syntax on
   set hlsearch
@@ -91,16 +105,3 @@ endif
 cmap <S-Insert>  <C-R>+
 
 
-if empty(glob('~/.vim/autoload/plug.vim'))
-  silent !curl -fLo ~/.vim/autoload/plug.vim --create-dirs
-    \ https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
-  autocmd VimEnter * PlugInstall --sync | source $MYVIMRC
-endif
-
-
-call plug#begin('~/.vim/plugged')
-
-Plug 'https://github.com/rafi/awesome-vim-colorschemes.git'
-
-" Initialize plugin system
-call plug#end()
