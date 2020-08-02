@@ -26,7 +26,6 @@ endif
 call plug#begin('~/.vim/plugged')
 
 Plug 'https://github.com/rafi/awesome-vim-colorschemes.git'
-Plug 'https://github.com/ycm-core/YouCompleteMe.git'
 " Initialize plugin system
 call plug#end()
 
