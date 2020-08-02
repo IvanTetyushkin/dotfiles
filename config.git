@@ -1,7 +1,9 @@
 [include]
     path = ~/.gitconfig.local
+[merge]
+    ff = only
 [hub]
-    protocol = https
+    protocol = ssh
 [alias]
     co = checkout
     #wtf     = !$ZSH/bin/git-wtf
@@ -13,3 +15,4 @@
 [core]
     excludesfile = ~/.gitignore
     editor = vim
+    autocrlf = true
