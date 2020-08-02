@@ -60,7 +60,7 @@ PS1+="\$LOCAL_VAR"
 PS1+="${white} path ";
 PS1+="${green}\w"; # working directory full path
 PS1+="\n";
-PS1+="${white}\$ ${reset}"; # `$` (and reset color)
+PS1+="\[${white}\]\[\$\] \[${reset}\]"; # `$` (and reset color)
 export PS1;
 PS2="\[${yellow}\]→ \[${reset}\]";
 export PS2;
